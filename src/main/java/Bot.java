@@ -10,7 +10,7 @@ public class Bot extends TelegramLongPollingBot {
 
     }
 
-    public String getBotUsername() {
+    public String getBotUsername("zotozName") {
         return null;
     }
 
