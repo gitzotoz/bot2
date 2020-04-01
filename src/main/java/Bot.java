@@ -10,11 +10,11 @@ public class Bot extends TelegramLongPollingBot {
 
     public void onUpdateReceived(Update update) {
 
-        Message message=update.getMessage();
+        Message message = update.getMessage();
 
-        SendMessage sendMessage= new SendMessage();
-        if (message!=null && message.hasText()){
-            switch (message.getText()){
+        SendMessage sendMessage = new SendMessage();
+        if (message != null && message.hasText()) {
+            switch (message.getText()) {
                 case "/help":
                     try {
                         execute(sendMessage.setText(message.getText() + "how can i help"));
@@ -30,15 +30,15 @@ public class Bot extends TelegramLongPollingBot {
                     }
                     break;
             }
+        }
+        }
 
-    }
-
-    public String getBotUsername("zoame") {
-        return null;
+    public String getBotUsername() {
+        return "Curta_bot";
     }
 
     public String getBotToken() {
-        return null;
+        return "761757086:AAGwvte69t904BvYU9B7YfsyNWBD0PdoOL4\n";
     }
 
     public static void main(String[] args) {
